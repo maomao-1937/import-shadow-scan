@@ -1,0 +1,13 @@
+[
+  {"args": ["import_shadow_scan.py", "--help"], "exit": 0},
+  {"args": ["import_shadow_scan.py", ".", "--format", "json"], "exit": 0},
+  {"args": ["-I", "import_shadow_scan.py", ".", "--format", "json"], "exit": 0},
+  {"args": ["examples/demo.py", "harmless"], "exit": 0},
+  {"args": ["examples/demo.py", "stdlib", "--format", "json"], "exit": 1},
+  {"args": ["examples/demo.py", "duplicate"], "exit": 1},
+  {"args": ["examples/demo.py", "namespace", "--format", "json"], "exit": 0},
+  {"args": ["examples/demo.py", "builtin"], "exit": 0},
+  {"args": ["examples/demo.py", "invalid"], "exit": 2},
+  {"args": ["examples/demo.py", "raising"], "exit": 1},
+  {"args": ["import_shadow_scan.py"], "exit": 2}
+]
